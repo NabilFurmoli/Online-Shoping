@@ -138,7 +138,8 @@ var imageViewScript = function () {
 
     let loadImages = function () {
 
-        let targetUrl = 'https://www.westelm.com/services/catalog/v4/category/shop/new/all-new/index.json';
+        //let targetUrl = 'https://www.westelm.com/services/catalog/v4/category/shop/new/all-new/index.json';
+        let targetUrl = 'resources/data/images.json';
         $.ajax({
             url: targetUrl,
             dataType: "json",
