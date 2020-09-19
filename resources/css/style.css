@@ -1,0 +1,262 @@
+/*
+Orange color: #e67e22
+Dark color: #393e46
+*/
+
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    height: 100vh;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.col-sm-12, .col-m-4 {
+    padding: 0px;
+}
+
+.m-0 {
+    margin: 0px;
+}
+
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.full-opacity {
+    opacity: 1;
+}
+
+.weight-400 {
+    font-weight: 400;
+}
+
+.weight-600 {
+    font-weight: 600;
+}
+
+.img-container {
+    position: relative;
+    text-align: center;
+    color: #343a40;
+}
+
+.img-container a {
+    display: block;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
+    background-color: #393e46;
+    width: auto;
+    height: fit-content;
+    padding: 4px 8px;
+    text-align: left;
+    color: white;
+    opacity: 0.86;
+}
+
+.top-left {
+    position: absolute;
+    top: 0px;
+    font-size: 14px;
+    background-color: snow;
+    width: 100%;
+    height: fit-content;
+    padding: 8px 8px;
+    text-align: left;
+    color: #5b5f63;
+    opacity: 0.86;
+}
+
+/* ----- HEADINGS ----- */
+h1,
+h2,
+h3 {
+    font-weight: 300;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 200%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #47ac4b;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+/* ----------------------------------------------- */
+/* Modal */
+/* ----------------------------------------------- */
+
+.modal-body  {
+    padding: 0px;
+}
+
+
+/* ----------------------------------------------- */
+/* Images Section */
+/* ----------------------------------------------- */
+
+.section-images {
+    padding: 0;
+    margin-bottom: 4vh;
+}
+
+.images-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.images-showcase li {
+    display: block;
+    padding: 0px 2px;
+}
+
+.image-photo {
+    width: 100%;
+    overflow: hidden;
+    margin: 4% 0;
+    background-color: #000;
+}
+
+.image-photo img {
+    opacity: 0.8;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.image-photo img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+
+/* ----------------------------------------------- */
+/* Animations */
+/* ----------------------------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}
