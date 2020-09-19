@@ -1,5 +1,7 @@
 Hi dear,
 
+The site is published at https://nabilfurmoli.github.io/Online-Shoping/
+
 The application is very straight forward to be tested. Simply download the zip file
 and open the html file via your web browser (Chrome prefered).
 
