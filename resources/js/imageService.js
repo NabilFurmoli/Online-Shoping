@@ -137,7 +137,7 @@ var imageViewScript = function () {
     /* ----------------------------------------------- */
 
     let loadImages = function () {
-
+        showLoadMask();
         let targetUrl = 'https://www.westelm.com/services/catalog/v4/category/shop/new/all-new/index.json';
         $.ajax({
             url: targetUrl,
@@ -150,7 +150,24 @@ var imageViewScript = function () {
                 var err = JSON.parse(xhr.responseText);
                 alert(err.message);
             },
+            complete: function () {
+                setTimeout(function () {
+                    hideLoadMask();
+                }, 500)
+            }
         });
+    }
+    
+    let showLoadMask = () => {
+        $("body").busyLoad("show", {
+            spinner: "cube-grid",
+            animation: "fade",
+            minSize: '200px'
+        });
+    }
+
+    let hideLoadMask = () => {
+        $("body").busyLoad("hide");
     }
 
     init();
