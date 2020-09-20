@@ -183,6 +183,10 @@ h2:after {
     margin-top: 30px;
 }
 
+.section-header h2 div{
+    flex-direction: row;
+}
+
 
 /* ----------------------------------------------- */
 /* Modal */
