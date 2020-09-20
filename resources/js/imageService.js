@@ -161,7 +161,7 @@ var imageViewScript = function () {
     let showLoadMask = () => {
         $("body").busyLoad("show", {
             spinner: "cube-grid",
-            animation: "fade",
+            animation: "slide",
             minSize: '200px'
         });
     }
