@@ -101,7 +101,7 @@ var imageViewScript = function () {
             let group = data.groups[i];
             self.imageGroups.push(group);
             let AvgPrice = calculateAverage(group);
-            let LiElementHtmlText = `<li class="col-sm-12 col-md-4 image" 
+            let LiElementHtmlText = `<li id="image-`+i+`" class="col-sm-12 col-md-4 image" 
                                          index="` + i + `" 
                                          data-toggle="modal" 
                                          data-target="#thumbnail-images-moadal">
